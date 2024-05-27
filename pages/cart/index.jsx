@@ -17,7 +17,7 @@ export default function Cart() {
   const [adress, setAdress] = useState('')
   const [state, setState] = useState('')
   const [country, setCountry] = useState('')
-  const [zip, setZip] = useState('')
+  const [zip, setZip] = useState('') 
   const [issuccess, setIsSuccess] = useState(false)
 
   useEffect(() => {
