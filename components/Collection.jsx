@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 
@@ -51,18 +52,33 @@ export default function Collection({ products }) {
                             </div>
                             <div className="lg-col-span-2 lg:py-8 ">
                                 <ul className="grid grid-cols-2 gap-4 ">
-                                    <li>
-                                        <div className="block group ">
-                                            <img src={products.images[0]} alt="product" className=" object-cover w-full h-full rounded aspect-square "/>
-
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="block group ">
-                                            <img src={products.images[1]} alt="product" className=" object-cover w-full h-full rounded aspect-square "/>
-
-                                        </div>
-                                    </li>
+                                <li>
+                                            <div className="block group">
+                                                <div className="relative w-full h-full aspect-square rounded overflow-hidden">
+                                                    <Image
+                                                        src={products.images[0]}
+                                                        alt="product"
+                                                        width={200}
+                                                        height={300}
+                                                        className="group-hover:opacity-75 object-fill transition-all"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li>
+                                            <div className="block group">
+                                                <div className="relative w-full h-full aspect-square rounded overflow-hidden">
+                                                    <Image
+                                                        src={products.images[1]}
+                                                        alt="product"
+                                                        height={200}
+                                                        width={200}
+                                                        className="group-hover:opacity-75 object-cover  transition-all"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </li>
                                 </ul>
                             </div>
                         </div>

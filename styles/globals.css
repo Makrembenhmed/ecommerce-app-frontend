@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.enhanced-border {
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    background-color: #EBE7E6; /* Orange clair */
+   /* border: 2px solid #99d9df; /* Bordure orange plus foncée */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    border-radius: 10px; /* Coins arrondis */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Assure que le conteneur prend toute la hauteur disponible */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .enhanced-border:hover {
+    transform: scale(1.05); /* Agrandissement léger au survol */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée au survol */
+  }
+  
+  .product-image {
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+    max-height: 100%; /* Assure que l'image ne dépasse pas la hauteur du conteneur */
+    object-fit: contain; /* Contient l'image à l'intérieur du conteneur tout en conservant les proportions */
+  }
+  
