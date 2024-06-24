@@ -11,6 +11,7 @@ export default function Hero({ product }) {
     toast.success('Successfully added to cart !')
   }
   return <>
+
     <div className="relative overflow-hidden my-14 md:my-10 ">
       <div className="lg py-40 min-h-[650px ] ">
         <div className="relative mx-auto sm:static px-6 lg:px-8 ">
@@ -25,14 +26,7 @@ export default function Hero({ product }) {
               {product.description}
             </p>
 
-            {/* medium dev
-
-</div>*/}
-
-            {/*  <div className="mt-10 flex flex-col max-sm:items-center max-sm:justify-center ">
-            <div className="relative"></div>
-
-</div>*/}
+           
 
             <div className="flex gap-4 mt-10 items-center max-sm:justify-center max-sm:mt-6">
               <button type="button" className="rounded-lg border border-primary bg-primary px-5 py-2.5 
