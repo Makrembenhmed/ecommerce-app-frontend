@@ -10,7 +10,7 @@ export default function Collection({ products }) {
         return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     }
-
+    
     if (products) {
         return <>
 

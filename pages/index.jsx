@@ -8,10 +8,11 @@ import { Product } from "@/models/product";
 
 
 
-export default function Home({ featuredProduct, newProducts, collectionProduct,allProducts }) {
+export default function Home({ featuredProduct, newProducts, collectionProduct, allProducts }) {
   return <>
-  <ProdCollection  products={allProducts}/>
-    
+  
+    <ProdCollection products={allProducts} />
+    <hr className="my-3 h-px border-0 bg-gray-300" />
     <Hero product={featuredProduct} />
     <hr className="my-3 h-px border-0 bg-gray-300" />
     <Products products={newProducts} />
@@ -38,7 +39,7 @@ export async function getServerSideProps() {
       featuredProduct: JSON.parse(JSON.stringify(featuredProduct)),
       newProducts: JSON.parse(JSON.stringify(newProducts)),
       collectionProduct: JSON.parse(JSON.stringify(collectionProduct)),
-      allProducts:JSON.parse(JSON.stringify(allProducts)),
+      allProducts: JSON.parse(JSON.stringify(allProducts)),
     }
   }
 }
