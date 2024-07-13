@@ -1,6 +1,6 @@
 import { CartContext } from "@/lib/CartContext";
 import { mongooseConnect } from "@/lib/mongoose";
-import { Product } from "@/models/Product";
+import { Product } from "@/models/product";
 import Image from "next/image";
 import { useContext } from "react";
 import toast from "react-hot-toast";
